@@ -8,10 +8,19 @@
         <entry key="authored-by" type="xstring" value="gartija"/>
         <entry key="authored-when" type="xstring" value="2024-07-07 16:01:10 -0500"/>
         <entry key="lastEdited-by" type="xstring" value="yema"/>
-        <entry key="lastEdited-when" type="xstring" value="2025-01-06 21:28:58 -0500"/>
+        <entry key="lastEdited-when" type="xstring" value="2025-01-06 21:32:52 -0500"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="IDLE"/>
+    <config key="nodecontainer_message">
+        <entry key="type" type="xstring" value="ERROR"/>
+        <entry key="message" type="xstring" value="Contains an unconnected node (&quot;DB Query Reader #32&quot;)"/>
+        <config key="resolutions">
+            <entry key="array-size" type="xint" value="2"/>
+            <entry key="0" type="xstring" value="Properly connect the node(s)."/>
+            <entry key="1" type="xstring" value="Delete unconnected node(s) from inner workflow."/>
+        </config>
+    </config>
     <config key="workflow_credentials"/>
     <config key="annotations">
         <config key="annotation_0">
