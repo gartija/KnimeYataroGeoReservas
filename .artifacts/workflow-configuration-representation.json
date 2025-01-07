@@ -1,0 +1,21 @@
+{
+    "source_table_name-34": {
+        "@class": "org.knime.js.base.node.configuration.input.string.StringDialogNodeRepresentation",
+        "label": "Nombre de la tabla temporal ",
+        "description": "Enter Description",
+        "required": true,
+        "defaultValue": {
+            "@class": "org.knime.js.base.node.configuration.input.string.StringDialogNodeValue",
+            "string": "geo.rnscjulio072024"
+        },
+        "currentValue": {
+            "@class": "org.knime.js.base.node.configuration.input.string.StringDialogNodeValue",
+            "string": "geo.rnscjulio072024"
+        },
+        "regex": "",
+        "errorMessage": "",
+        "editorType": "Single-line",
+        "multilineEditorWidth": 40,
+        "multilineEditorHeight": 5
+    }
+}
