@@ -6,13 +6,13 @@
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="source_table_name"/>
             <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="geo.rnscjulio072024"/>
+            <entry key="value" type="xstring" value="runap.runap2024"/>
         </config>
         <config key="Variable_1">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="source_table_name"/>
             <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="geo.rnscjulio072024"/>
+            <entry key="value" type="xstring" value="runap.runap2024"/>
         </config>
     </config>
     <config key="internal_node_subsettings">
@@ -20,7 +20,7 @@
     </config>
     <config key="model">
         <config key="defaultValue">
-            <entry key="string" type="xstring" value="geo.rnscjulio072024"/>
+            <entry key="string" type="xstring" value="runap.runap2024"/>
         </config>
         <entry key="hideInDialog" type="xboolean" value="false"/>
         <entry key="parameterName" type="xstring" value="source_table_name"/>
@@ -63,6 +63,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="716c4195-296f-423b-8fda-eff909eb5bf8"/>
+        <entry key="file_store_id" type="xstring" value="fc9df163-49ec-40e5-822d-897dddfad05c"/>
     </config>
 </config>

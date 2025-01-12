@@ -6,18 +6,6 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <config key="session_info">
-            <entry key="version" type="xint" value="5"/>
-            <entry key="db_type" type="xstring" value="postgres"/>
-            <entry key="db_dialect" type="xstring" value="postgres"/>
-            <entry key="db_driver" type="xstring" value="built-in-postgres-42.3.5"/>
-            <config key="attributes"/>
-        </config>
-        <config key="postgres-connection">
-            <entry key="host" type="xstring" value="localhost"/>
-            <entry key="port" type="xint" value="5432"/>
-            <entry key="database_name" type="xstring" value="postgis"/>
-        </config>
         <config key="authentication_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_authentication"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -25,8 +13,21 @@
         <config key="authentication">
             <entry key="credentials" type="xstring" isnull="true" value=""/>
             <entry key="username" type="xstring" value="admin"/>
-            <entry key="password" type="xpassword" value="02BgAAAGMq_QxveL1vZ0EBj_le8id7sEUE4mQ="/>
+            <entry key="password" type="xpassword" value="02BQAAAGMq_QxveL1vZ0EBj0FeJ57sHZixBw=="/>
             <entry key="selectedType" type="xstring" value="USER_PWD"/>
+        </config>
+        <config key="session_info">
+            <entry key="version" type="xint" value="6"/>
+            <entry key="db_type" type="xstring" value="postgres"/>
+            <entry key="db_dialect" type="xstring" value="postgres"/>
+            <entry key="db_driver" type="xstring" value="Postgres"/>
+            <entry key="db_driver_latest" type="xboolean" value="false"/>
+            <config key="attributes"/>
+        </config>
+        <config key="postgres-connection">
+            <entry key="host" type="xstring" value="localhost"/>
+            <entry key="port" type="xint" value="54321"/>
+            <entry key="database_name" type="xstring" value="postgis"/>
         </config>
         <config key="external_to_knime_mapping_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_dataTypeMapping"/>
@@ -913,11 +914,7 @@
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="CONFIGURED"/>
-    <config key="nodecontainer_message">
-        <entry key="type" type="xstring" value="ERROR"/>
-        <entry key="message" type="xstring" value="Execute failed: FATAL: password authentication failed for user &quot;admin&quot;"/>
-    </config>
+    <entry key="state" type="xstring" value="EXECUTED"/>
     <entry key="factory" type="xstring" value="org.knime.database.extension.postgres.node.connector.PostgreSQLDBConnectorNodeFactory"/>
     <entry key="node-name" type="xstring" value="PostgreSQL Connector"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME database extensions"/>
@@ -930,16 +927,21 @@
     <entry key="node-feature-version" type="xstring" value="5.4.0.v202411070937"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="PostgreSQL Connector"/>
-    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
     <entry key="isInactive" type="xboolean" value="false"/>
     <config key="ports">
         <config key="port_1">
             <entry key="index" type="xint" value="1"/>
-            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.database.port.DBSessionPortObjectSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.database.port.DBSessionPortObject"/>
+            <entry key="port_object_summary" type="xstring" value="PostgreSQL a12bb5fe-dc55-4294-87c9-12852bdd61fe"/>
+            <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
+            <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" value="8ee058b3-7639-4209-84c9-88125d3aabe0"/>
     </config>
 </config>

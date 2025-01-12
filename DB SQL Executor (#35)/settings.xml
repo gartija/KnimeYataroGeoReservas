@@ -7,7 +7,7 @@
     </config>
     <config key="model">
         <entry key="statementSeparator" type="xstring" value=";"/>
-        <entry key="statement" type="xstring" value="insert into geo.master_rnsc (id_pnn, wkb_geometry, nombre, categoria, resolucion, hectareas_total, fecha_act, url, wkid, centroid_x, centroid_y, fecha_regi, hectareas_registradas, administra, record_id)%%00010select id_pnn, wkb_geometry, nombre, categoria, resolucion, hectareas_ as hectareas_total, fecha_act, url, wkid, centroid_x, centroid_y, fecha_regi, hectareas0 as hectareas_registradas, administra, record_id%%00010from $${Ssource_table_name}$$ where id_pnn not in (select id_pnn from geo.master_rnsc)"/>
+        <entry key="statement" type="xstring" value="insert into &quot;geo&quot;.&quot;master_rnsc&quot; (id_pnn, wkb_geometry, nombre, categoria, resolucion, hectareas_total, fecha_act, url, wkid, centroid_x, centroid_y, fecha_regi, hectareas_registradas, administra, record_id)%%00010select id_pnn, wkb_geometry, nombre, categoria, resolucion, hectareas_ as hectareas_total, fecha_act, url, wkid, centroid_x, centroid_y, fecha_regi, hectareas0 as hectareas_registradas, administra, record_id%%00010from $${Ssource_table_name}$$ where id_pnn not in (select id_pnn from &quot;geo&quot;.&quot;master_rnsc&quot;)"/>
         <config key="multipleStatement_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -30,7 +30,11 @@
         <config key="styles"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <config key="nodecontainer_message">
+        <entry key="type" type="xstring" value="ERROR"/>
+        <entry key="message" type="xstring" value="Execute failed: ERROR: relation &quot;geo.master_rnsc&quot; does not exist%%00010  Position: 13"/>
+    </config>
     <entry key="factory" type="xstring" value="org.knime.database.node.manipulation.executor.DBExecutorNodeFactory"/>
     <entry key="node-name" type="xstring" value="DB SQL Executor"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME database nodes"/>

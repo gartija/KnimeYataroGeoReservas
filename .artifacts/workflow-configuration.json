@@ -2,6 +2,6 @@
     "source_table_name-34": {
         "label": "Nombre de la tabla temporal ",
         "type": "string",
-        "default": "geo.rnscjulio072024"
+        "default": "runap.runap2024"
     }
 }
