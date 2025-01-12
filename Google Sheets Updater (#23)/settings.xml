@@ -16,11 +16,6 @@
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
         <entry key="writeRowId" type="xboolean" value="false"/>
-        <config key="writeRaw_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="writeRaw" type="xboolean" value="true"/>
         <config key="columnFilter_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_columnfilter"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -28,34 +23,19 @@
         <config key="columnFilter">
             <entry key="filter-type" type="xstring" value="STANDARD"/>
             <config key="included_names">
-                <entry key="array-size" type="xint" value="27"/>
-                <entry key="0" type="xstring" value="ogc_fid"/>
-                <entry key="1" type="xstring" value="nombre"/>
-                <entry key="2" type="xstring" value="categoria"/>
-                <entry key="3" type="xstring" value="territoria"/>
-                <entry key="4" type="xstring" value="resolucion"/>
-                <entry key="5" type="xstring" value="hectareas_"/>
-                <entry key="6" type="xstring" value="escala"/>
-                <entry key="7" type="xstring" value="organizaci"/>
-                <entry key="8" type="xstring" value="fecha_act"/>
-                <entry key="9" type="xstring" value="url"/>
-                <entry key="10" type="xstring" value="wkid"/>
-                <entry key="11" type="xstring" value="centroid_x"/>
-                <entry key="12" type="xstring" value="centroid_y"/>
-                <entry key="13" type="xstring" value="fecha_regi"/>
-                <entry key="14" type="xstring" value="validado"/>
-                <entry key="15" type="xstring" value="hectareas0"/>
-                <entry key="16" type="xstring" value="perimetro_"/>
-                <entry key="17" type="xstring" value="administra"/>
-                <entry key="18" type="xstring" value="id_pnn"/>
-                <entry key="19" type="xstring" value="record_id"/>
-                <entry key="20" type="xstring" value="app_id"/>
-                <entry key="21" type="xstring" value="IGAC servicio de consulta de coordenadas y alturas"/>
-                <entry key="22" type="xstring" value="Departamento"/>
-                <entry key="23" type="xstring" value="Municipio"/>
-                <entry key="24" type="xstring" value="MSNM"/>
-                <entry key="25" type="xstring" value="CodDepto"/>
-                <entry key="26" type="xstring" value="CodMunicipio"/>
+                <entry key="array-size" type="xint" value="12"/>
+                <entry key="0" type="xstring" value="id_pnn"/>
+                <entry key="1" type="xstring" value="centroid_x"/>
+                <entry key="2" type="xstring" value="centroid_y"/>
+                <entry key="3" type="xstring" value="IGAC servicio de consulta de coordenadas y alturas"/>
+                <entry key="4" type="xstring" value="Status"/>
+                <entry key="5" type="xstring" value="Departamento"/>
+                <entry key="6" type="xstring" value="Municipio"/>
+                <entry key="7" type="xstring" value="Municipios (Fronterizo)"/>
+                <entry key="8" type="xstring" value="MSNM"/>
+                <entry key="9" type="xstring" value="MSNM2"/>
+                <entry key="10" type="xstring" value="CodDepto"/>
+                <entry key="11" type="xstring" value="CodMunicipio"/>
             </config>
             <config key="excluded_names">
                 <entry key="array-size" type="xint" value="1"/>
@@ -70,12 +50,11 @@
             </config>
             <config key="datatype">
                 <config key="typelist">
-                    <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
-                    <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
-                    <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
-                    <entry key="org.knime.core.data.time.localdate.LocalDateValue" type="xboolean" value="false"/>
                     <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
                     <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
                     <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
                 </config>
             </config>
@@ -91,6 +70,11 @@
         </config>
         <entry key="missingValue" type="xstring" value=""/>
         <entry key="missingValue_BOOL" type="xboolean" value="false"/>
+        <config key="writeRaw_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="writeRaw" type="xboolean" value="true"/>
         <config key="spreadsheetChooser_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_spreadsheetandsheetchoser"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -118,8 +102,19 @@
         </config>
         <entry key="clearSheet" type="xboolean" value="true"/>
     </config>
+    <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
+        <config key="tree">
+            <config key="spreadsheetChooser">
+                <config key="sheetName">
+                    <entry key="used_variable" type="xstring" value="sheet_name"/>
+                    <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+                </config>
+            </config>
+        </config>
+    </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
     <entry key="factory" type="xstring" value="org.knime.google.api.sheets.nodes.sheetupdater.GoogleSheetUpdaterFactory"/>
     <entry key="node-name" type="xstring" value="Google Sheets Updater"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Google API Nodes"/>

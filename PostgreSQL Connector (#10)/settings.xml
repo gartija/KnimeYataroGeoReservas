@@ -20,7 +20,7 @@
             <entry key="version" type="xint" value="6"/>
             <entry key="db_type" type="xstring" value="postgres"/>
             <entry key="db_dialect" type="xstring" value="postgres"/>
-            <entry key="db_driver" type="xstring" value="Postgres"/>
+            <entry key="db_driver" type="xstring" value="Postgis"/>
             <entry key="db_driver_latest" type="xboolean" value="false"/>
             <config key="attributes"/>
         </config>
@@ -934,7 +934,7 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.database.port.DBSessionPortObjectSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.database.port.DBSessionPortObject"/>
-            <entry key="port_object_summary" type="xstring" value="PostgreSQL a12bb5fe-dc55-4294-87c9-12852bdd61fe"/>
+            <entry key="port_object_summary" type="xstring" value="PostgreSQL 24e641ba-ac1a-4049-97e5-c55e3e2e1d22"/>
             <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
             <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
@@ -942,6 +942,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="8ee058b3-7639-4209-84c9-88125d3aabe0"/>
+        <entry key="file_store_id" type="xstring" value="640997d7-19bb-4c70-b1e6-f5c9a6ea7fe1"/>
     </config>
 </config>
